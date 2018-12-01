@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	log.Print("Starting application...")
+	log.Print("Starting application in K8S...")
 
 	port := "8080"
 
@@ -19,7 +19,7 @@ func main() {
 
 	err := s.ListenAndServe()
 	if err != nil {
-		log.Fatalf("Serever is stoped with error: %v", err)
+		log.Fatalf("Server is stoped with error: %v", err)
 	}
 
 	log.Print("Application has been stoped")
